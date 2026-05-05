@@ -1,5 +1,5 @@
 import { Lock, Scale, UserCheck } from "lucide-react";
-import logoLight from "@/assets/logo-light-bg.png";
+import evandroPortrait from "@/assets/evandro-portrait.jpg";
 
 const cards = [
   {
@@ -21,36 +21,48 @@ const cards = [
 
 export function About() {
   return (
-    <section id="sobre" className="bg-background py-24">
+    <section id="sobre" className="bg-secondary py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
             <span className="gold-divider mb-6" />
             <p className="mb-3 text-xs uppercase tracking-[0.25em] text-gold font-semibold">Sobre</p>
             <h2 className="text-3xl font-bold text-oxford md:text-5xl">
-              Experiência, ética e resultados que transformam dúvidas em certezas
+              Investigação conduzida com método, ética e absoluta discrição
             </h2>
             <div className="mt-8 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Evandro Pessoa atua há mais de uma década no segmento de investigação
-                particular, oferecendo soluções discretas e altamente técnicas para clientes
-                pessoais e empresariais em todo o Brasil.
+                Evandro Pessoa é um investigador profissional com ampla experiência nas áreas
+                de inteligência e investigação privada. Seu trabalho é marcado pelo compromisso
+                rigoroso com a verdade, ética e excelência técnica.
               </p>
               <p>
-                Com formação especializada e métodos investigativos modernos, conduzimos
-                cada apuração com profissionalismo, sensibilidade e absoluto compromisso com
-                a verdade — sempre dentro da legalidade.
+                Formado e treinado no método <strong className="text-oxford">T.R.I.I.P. – Técnicas Reais
+                de Inteligência e Investigação Policial</strong>, Evandro atua com elevada precisão,
+                total discrição e absoluto respeito às normas legais e éticas.
               </p>
               <p>
-                Nosso objetivo é entregar respostas claras, provas legítimas e tranquilidade
-                para que você possa tomar decisões com segurança.
+                Seu trabalho fundamenta-se em conhecimento técnico avançado, planejamento
+                estratégico e responsabilidade. Acredita que informações confiáveis, obtidas
+                de forma profissional e segura, são essenciais para que seus clientes tomem
+                decisões assertivas e protegidas.
+              </p>
+              <p>
+                Mais do que realizar investigações, sua missão é entregar confiança, clareza
+                e tranquilidade diante dos casos mais complexos e delicados.
               </p>
             </div>
           </div>
 
           <div className="flex justify-center">
-            <div className="rounded-2xl bg-secondary p-12 shadow-elegant border border-border">
-              <img src={logoLight} alt="Evandro Pessoa" className="w-72 max-w-full" />
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-2xl border border-gold/30" aria-hidden="true" />
+              <img
+                src={evandroPortrait}
+                alt="Evandro Pessoa, investigador profissional"
+                loading="lazy"
+                className="relative w-full max-w-md rounded-2xl object-cover shadow-elegant"
+              />
             </div>
           </div>
         </div>
