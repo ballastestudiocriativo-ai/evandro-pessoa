@@ -39,7 +39,7 @@ export function Footer() {
                   WhatsApp: {PHONE_DISPLAY}
                 </a>
               </li>
-              <li>Atendimento: São Paulo e todo o Brasil</li>
+              <li>Atendimento em todo o território nacional</li>
             </ul>
           </div>
         </div>
