@@ -49,16 +49,18 @@ export function Footer() {
             © {new Date().getFullYear()} Evandro Pessoa — Investigação Profissional. Todos os direitos reservados.
           </p>
           <a
-            href="#"
-            className="flex items-center gap-3 text-xs text-white/60 hover:text-gold transition-colors"
-            aria-label="Site desenvolvido por Ballast Presença Digital"
+            href={`https://wa.me/5513978086239?text=${encodeURIComponent("Olá! Vi que fez o site do Evandro Pessoa, e gostaria de entrar em contato com você!")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 text-sm text-white/70 hover:text-gold transition-colors"
+            aria-label="Site desenvolvido por Ballast Presença Digital — falar no WhatsApp"
           >
-            <span>Site desenvolvido por</span>
+            <span>Site desenvolvido por Ballast Presença Digital</span>
             <img
               src={ballastLogo}
               alt="Ballast Presença Digital"
               loading="lazy"
-              className="h-10 w-auto"
+              className="h-16 w-auto md:h-20"
             />
           </a>
         </div>

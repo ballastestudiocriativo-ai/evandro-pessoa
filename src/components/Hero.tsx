@@ -18,20 +18,22 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--oxford-deep)] via-transparent to-[var(--oxford-deep)]/60" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-32 pb-20">
-        <div className="max-w-3xl">
+      <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-10 px-6 pt-28 pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-16">
+        <div className="flex justify-center lg:justify-start">
           <img
             src={logoTransparent}
             alt="Evandro Pessoa Investigação Profissional"
-            className="mb-8 h-56 w-auto md:h-72"
+            className="h-64 w-auto md:h-80 lg:h-[26rem]"
           />
+        </div>
 
+        <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold backdrop-blur">
             <ShieldCheck className="h-3.5 w-3.5" />
             Sigilo · Ética · Resultado
           </div>
 
-          <h1 className="text-4xl font-bold leading-[1.1] text-white md:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold leading-[1.1] text-white md:text-6xl lg:text-6xl xl:text-7xl">
             Investigação Profissional com{" "}
             <span className="text-gold">Sigilo Absoluto</span>
           </h1>
