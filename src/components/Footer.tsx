@@ -49,7 +49,7 @@ export function Footer() {
             © {new Date().getFullYear()} Evandro Pessoa — Investigação Profissional. Todos os direitos reservados.
           </p>
           <a
-            href={`https://wa.me/5513978086239?text=${encodeURIComponent("Olá! Vi que fez o site do Evandro Pessoa, e gostaria de entrar em contato com você!")}`}
+            href={`https://wa.me/5513978086239?text=${encodeURIComponent("Vi que fez o site para o Evandro Pessoa, e gostaria que entrasse em contato comigo!")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 text-sm text-white/70 hover:text-gold transition-colors"
