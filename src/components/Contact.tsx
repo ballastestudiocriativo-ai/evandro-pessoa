@@ -65,7 +65,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Atendimento</div>
-                  <div className="font-semibold text-oxford">São Paulo e todo o Brasil</div>
+                  <div className="font-semibold text-oxford">Em todo o território nacional</div>
                 </div>
               </div>
             </div>
