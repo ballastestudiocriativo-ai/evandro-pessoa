@@ -1,5 +1,6 @@
-import { MessageCircle, ShieldCheck, ArrowRight } from "lucide-react";
+import { ShieldCheck, ArrowRight } from "lucide-react";
 import heroImg from "@/assets/hero-investigation.jpg";
+import logoTransparent from "@/assets/logo-transparent.png";
 import { WHATSAPP_LINK } from "@/lib/contact";
 
 export function Hero() {
@@ -19,6 +20,12 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-32 pb-20">
         <div className="max-w-3xl">
+          <img
+            src={logoTransparent}
+            alt="Evandro Pessoa Investigação Profissional"
+            className="mb-8 h-56 w-auto md:h-72"
+          />
+
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold backdrop-blur">
             <ShieldCheck className="h-3.5 w-3.5" />
             Sigilo · Ética · Resultado
@@ -34,36 +41,16 @@ export function Hero() {
             Atuação técnica, ética e dentro da legalidade.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10">
             <a
-              href="#contato"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-md bg-gold px-8 py-4 text-base font-semibold text-[var(--oxford-deep)] shadow-gold transition-all hover:scale-[1.02]"
             >
               Solicitar Investigação
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur transition-all hover:border-gold hover:text-gold"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Falar no WhatsApp
-            </a>
-          </div>
-
-          <div className="mt-16 grid grid-cols-3 gap-6 border-t border-white/10 pt-8 max-w-xl">
-            {[
-              { n: "100%", l: "Confidencial" },
-              { n: "24/7", l: "Atendimento" },
-              { n: "+10", l: "Anos no setor" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="text-2xl font-bold text-gold md:text-3xl">{s.n}</div>
-                <div className="text-xs uppercase tracking-wider text-white/60">{s.l}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
