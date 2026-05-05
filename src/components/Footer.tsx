@@ -1,4 +1,5 @@
-import logoDark from "@/assets/logo-dark-bg.png";
+import logoTransparent from "@/assets/logo-transparent.png";
+import ballastLogo from "@/assets/ballast-logo.png";
 import { PHONE_DISPLAY, WHATSAPP_LINK } from "@/lib/contact";
 
 const links = [
@@ -15,7 +16,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <img src={logoDark} alt="Evandro Pessoa" className="h-20 w-auto" />
+            <img src={logoTransparent} alt="Evandro Pessoa" loading="lazy" className="h-24 w-auto" />
             <p className="mt-4 text-sm leading-relaxed">
               Investigação profissional com sigilo absoluto, ética e atuação dentro da legalidade vigente.
             </p>
@@ -39,19 +40,31 @@ export function Footer() {
                 </a>
               </li>
               <li>Atendimento: São Paulo e todo o Brasil</li>
-              <li>Horário: 24h, todos os dias</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 border-t border-white/10 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Evandro Pessoa — Investigação Profissional. Todos os direitos reservados.
           </p>
-          <p className="text-xs text-white/50">
-            Todos os serviços realizados dentro da legalidade vigente.
-          </p>
+          <a
+            href="#"
+            className="flex items-center gap-3 text-xs text-white/60 hover:text-gold transition-colors"
+            aria-label="Site desenvolvido por Ballast Presença Digital"
+          >
+            <span>Site desenvolvido por</span>
+            <img
+              src={ballastLogo}
+              alt="Ballast Presença Digital"
+              loading="lazy"
+              className="h-10 w-auto"
+            />
+          </a>
         </div>
+        <p className="mt-4 text-xs text-white/40 text-center md:text-right">
+          Todos os serviços realizados dentro da legalidade vigente.
+        </p>
       </div>
     </footer>
   );

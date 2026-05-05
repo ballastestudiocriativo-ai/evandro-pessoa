@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoDark from "@/assets/logo-dark-bg.png";
+import logoTransparent from "@/assets/logo-transparent.png";
 import { WHATSAPP_LINK } from "@/lib/contact";
 
 const links = [
@@ -30,7 +30,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logoDark} alt="Evandro Pessoa Investigação Profissional" className="h-12 w-auto" />
+          <img src={logoTransparent} alt="Evandro Pessoa Investigação Profissional" className="h-12 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
