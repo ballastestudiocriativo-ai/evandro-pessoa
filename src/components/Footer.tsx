@@ -55,7 +55,7 @@ export function Footer() {
             className="flex items-center gap-4 text-sm text-white/70 hover:text-gold transition-colors"
             aria-label="Site desenvolvido por Ballast Presença Digital — falar no WhatsApp"
           >
-            <span>Site desenvolvido por Ballast Presença Digital</span>
+            <span>Site desenvolvido por Ballast Estúdio Criativo</span>
             <img
               src={ballastLogo}
               alt="Ballast Presença Digital"
