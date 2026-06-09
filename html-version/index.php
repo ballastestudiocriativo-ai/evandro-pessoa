@@ -163,9 +163,7 @@ $differentials = [
     <div class="services-grid">
       <?php foreach ($services as $s): ?>
         <a href="<?= waFor($s['title']) ?>" target="_blank" rel="noopener" class="service-card">
-          <div class="service-icon"><?= file_get_contents(__DIR__ . '/icons.svg') !== false ? '' : '' ?>
-            <span class="ico ico-<?= $s['icon'] ?>"></span>
-          </div>
+          <div class="service-icon"><span class="ico ico-<?= $s['icon'] ?>"></span></div>
           <h3><?= htmlspecialchars($s['title']) ?></h3>
           <p><?= htmlspecialchars($s['desc']) ?></p>
           <span class="service-link">Falar no WhatsApp ↗</span>
